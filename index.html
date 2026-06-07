@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flodech</title>
+<title>Flodech Maintenance</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -14,151 +13,112 @@
 }
 
 body{
-    font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
-    background:#fafafa;
-    color:#111827;
+    background:#f3f3f5;
+    font-family:Inter, Arial, sans-serif;
     min-height:100vh;
     display:flex;
-    align-items:center;
     justify-content:center;
-    padding:40px;
+    align-items:center;
 }
 
 .container{
-    width:100%;
-    max-width:900px;
+    text-align:center;
+    padding:20px;
 }
 
-.top{
-    margin-bottom:80px;
+.gears{
+    margin-bottom:40px;
+    position:relative;
+    height:100px;
 }
 
-.brand{
-    font-size:22px;
-    font-weight:700;
-    letter-spacing:-0.5px;
+.gear-big{
+    font-size:78px;
+    color:#d1d5db;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
 }
 
-.brand span{
-    color:#f97316;
-}
-
-.main{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-}
-
-.status{
-    color:#f97316;
-    font-size:14px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:1px;
+.gear-small{
+    font-size:48px;
+    color:#fbbf24;
+    position:absolute;
+    left:55%;
+    top:-5px;
 }
 
 h1{
-    font-size:clamp(3rem,8vw,6rem);
-    line-height:0.95;
+    font-size:78px;
     font-weight:800;
-    letter-spacing:-3px;
+    color:#374151;
+    line-height:1.05;
+    margin-bottom:18px;
+    letter-spacing:-2px;
 }
 
-.description{
-    max-width:620px;
+p{
+    font-size:22px;
     color:#6b7280;
-    font-size:20px;
-    line-height:1.7;
+    margin-bottom:40px;
 }
 
 .actions{
     display:flex;
-    gap:14px;
-    margin-top:20px;
+    justify-content:center;
+    gap:16px;
 }
 
-.primary{
-    background:#111827;
-    color:white;
+.reload{
     text-decoration:none;
-    padding:14px 24px;
-    border-radius:10px;
-    font-weight:600;
-}
-
-.secondary{
     color:#111827;
-    text-decoration:none;
-    padding:14px 24px;
-    border-radius:10px;
-    border:1px solid #e5e7eb;
+    border:2px solid #374151;
+    padding:14px 28px;
+    border-radius:4px;
     font-weight:600;
+    transition:.2s;
 }
 
-.footer{
-    margin-top:100px;
-    color:#9ca3af;
-    font-size:14px;
+.reload:hover{
+    background:#e5e7eb;
 }
 
 @media(max-width:768px){
 
-    .description{
+    h1{
+        font-size:48px;
+    }
+
+    p{
         font-size:18px;
     }
 
     .actions{
         flex-direction:column;
+        align-items:center;
     }
-
-    .primary,
-    .secondary{
-        text-align:center;
-    }
-
 }
-
 </style>
 </head>
 <body>
 
 <div class="container">
 
-    <div class="top">
-        <div class="brand">
-            Flo<span>dech</span>
-        </div>
+    <div class="gears">
+        <div class="gear-big">⚙</div>
+        <div class="gear-small">⚙</div>
     </div>
 
-    <div class="main">
+    <h1>Flodech is under maintenance</h1>
 
-        <div class="status">
-            Platform Update
-        </div>
+    <p>
+        We're making a few improvements and will be back shortly.
+    </p>
 
-        <h1>
-            We'll be back soon.
-        </h1>
-
-        <p class="description">
-            Flodech is currently unavailable while we make a few important improvements.
-            Thank you for your patience.
-        </p>
-
-        <div class="actions">
-            <a href="mailto:support@flodech.com" class="primary">
-                Contact Support
-            </a>
-
-            <a href="/" class="secondary">
-                Try Again
-            </a>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        © 2026 Flodech
+    <div class="actions">
+        <a href="javascript:location.reload()" class="reload">
+            Reload
+        </a>
     </div>
 
 </div>
