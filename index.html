@@ -1,7 +1,167 @@
-<div class="bg-gray-100">
-  <div class="min-h-screen flex flex-col justify-center items-center">
-    <img src="https://www.svgrepo.com/show/426192/cogs-settings.svg" alt="Logo" class="mb-8 h-40">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 mb-4">Site is under maintenance</h1>
-    <p class="text-center text-gray-500 text-lg md:text-xl lg:text-2xl mb-8">We're working hard to improve the user experience. Stay tuned!</p>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flodech</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+    background:#fafafa;
+    color:#111827;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+.top{
+    margin-bottom:80px;
+}
+
+.brand{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:-0.5px;
+}
+
+.brand span{
+    color:#f97316;
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.status{
+    color:#f97316;
+    font-size:14px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+h1{
+    font-size:clamp(3rem,8vw,6rem);
+    line-height:0.95;
+    font-weight:800;
+    letter-spacing:-3px;
+}
+
+.description{
+    max-width:620px;
+    color:#6b7280;
+    font-size:20px;
+    line-height:1.7;
+}
+
+.actions{
+    display:flex;
+    gap:14px;
+    margin-top:20px;
+}
+
+.primary{
+    background:#111827;
+    color:white;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.secondary{
+    color:#111827;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+    font-weight:600;
+}
+
+.footer{
+    margin-top:100px;
+    color:#9ca3af;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .description{
+        font-size:18px;
+    }
+
+    .actions{
+        flex-direction:column;
+    }
+
+    .primary,
+    .secondary{
+        text-align:center;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top">
+        <div class="brand">
+            Flo<span>dech</span>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="status">
+            Platform Update
+        </div>
+
+        <h1>
+            We'll be back soon.
+        </h1>
+
+        <p class="description">
+            Flodech is currently unavailable while we make a few important improvements.
+            Thank you for your patience.
+        </p>
+
+        <div class="actions">
+            <a href="mailto:support@flodech.com" class="primary">
+                Contact Support
+            </a>
+
+            <a href="/" class="secondary">
+                Try Again
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Flodech
+    </div>
+
 </div>
+
+</body>
+</html>
